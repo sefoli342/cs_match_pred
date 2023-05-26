@@ -67,7 +67,7 @@ ct_ak47=col11.number_input("CT-takımının AK-47 silahları  toplamını yazın
 t_ak47=col12.number_input("T-takımının AK-47 silahlarının toplamını yazınız",min_value=0,max_value=5,value=2,step=1)
 
 
-df=pd.read_excel(r"new_df.xlsx")
+df=pd.read_excel("new_df.xlsx")
 
 first_sample_list=[kalan_süre,Counter_T_score,T_score,map_seçim,bomba,Ct_health,t_health,ct_armor,t_armor,
                    ct_money,t_money,ct_helmet,t_helmet,kit,ct_alive,t_alive,ct_ak47,t_ak47]
