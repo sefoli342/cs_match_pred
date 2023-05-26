@@ -174,11 +174,11 @@ surv = st.checkbox("Prediction ")
 if surv:
     if model.predict(my_sample) == 1:
         st.success("Terorrist Win")
-        image19 = Image.open("C:/Users/SEFA/OneDrive/Masaüstü/cs-go-101-620x350.jpg")
+        image19 = Image.open("cs-go-101-620x350.jpg")
         st.image(image19)
     else:
         st.error("Counter-Terorrist Win")
-        image20 = Image.open("C:/Users/SEFA/OneDrive/Masaüstü/csfoto.jpg")
+        image20 = Image.open("csfoto.jpg")
         st.image(image20)
 
 
