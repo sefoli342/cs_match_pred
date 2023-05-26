@@ -3,3 +3,4 @@ pandas==1.2.3
 Pillow==9.5.0
 streamlit==1.11.0
 lightgbm==3.3.2
+openpyxl
