@@ -10,7 +10,7 @@ from PIL import Image
 
 
 
-model=joblib.load("C:/Users/SEFA/model.pkl")
+model=joblib.load("model.pkl")
 
 maps=["de_cache","de_dust2","de_inferno","de_mirage","de_nuke","de_overpass","de_train","de_vertigo"]
 map_seçim1=st.sidebar.selectbox("Map seçiniz",maps)
@@ -33,8 +33,8 @@ t_health=st.sidebar.number_input("T-takımı sağlık toplamını yazınız",max
 import streamlit as st
 from PIL import Image
 col3, col4 = st.columns(2)
-image1 =Image.open("C:/Users/SEFA/OneDrive/Masaüstü/csgo-esportimes.jpg")
-image2=Image.open("C:/Users/SEFA/OneDrive/Masaüstü/logo-dark.png")
+image1 =Image.open("csgo-esportimes.jpg")
+image2=Image.open("logo-dark.png")
 col3.image(image1)
 col4.image(image2)
 
@@ -67,7 +67,7 @@ ct_ak47=col11.number_input("CT-takımının AK-47 silahları  toplamını yazın
 t_ak47=col12.number_input("T-takımının AK-47 silahlarının toplamını yazınız",min_value=0,max_value=5,value=2,step=1)
 
 
-df=pd.read_excel(r"C:\Users\SEFA\OneDrive\Masaüstü\new_df.xlsx")
+df=pd.read_excel(r"new_df.xlsx")
 
 first_sample_list=[kalan_süre,Counter_T_score,T_score,map_seçim,bomba,Ct_health,t_health,ct_armor,t_armor,
                    ct_money,t_money,ct_helmet,t_helmet,kit,ct_alive,t_alive,ct_ak47,t_ak47]
